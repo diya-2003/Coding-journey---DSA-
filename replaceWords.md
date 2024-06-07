@@ -49,6 +49,7 @@ solution = Solution()
 dictionary = ["cat", "bat", "rat"]
 sentence = "the cattle was rattled by the battery"
 print(solution.replaceWords(dictionary, sentence))  # Output: "the cat was rat by the bat"
+#Author : diya maity
 ```
 
 ### Explanation with Example
