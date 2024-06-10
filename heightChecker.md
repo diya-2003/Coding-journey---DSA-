@@ -1,5 +1,3 @@
-To solve the problem of counting how many students are out of their expected positions when sorted by height, we can use a frequency array to count occurrences of each height, then compare the original array with the expected sorted order. This approach ensures an efficient solution.
-
 ### Approach
 
 1. **Frequency Array**:
