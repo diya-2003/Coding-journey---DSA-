@@ -12,5 +12,5 @@ This repository includes:
 ## Contact
 
 You can reach me via:
-- **Email:** [diyaiembca2024@gmail.com](mailto:mailto:diyaiembca2024@gmail.com)
 - **LinkedIn:** [diya1093](https://www.linkedin.com/in/diya1093)
+- **LeetCode:** [diyamaity](https://leetcode.com/u/diyamaity/)
