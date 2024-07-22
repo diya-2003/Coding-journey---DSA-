@@ -14,13 +14,13 @@ To solve this problem, the goal is to sort people based on their heights in desc
 
 ## Code
 ```
-void swapInt(int* a, int* b) 
+void swapi(int* a, int* b) 
 {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-void swapString(char** a, char** b) 
+void swaps(char** a, char** b) 
 {
     char* temp = *a;
     *a = *b;
@@ -43,8 +43,8 @@ char** sortPeople(char** names, int namesSize, int* heights, int heightsSize, in
                 maxIdx = j;
             }
         }
-        swapInt(&heights[i], &heights[maxIdx]);
-        swapString(&names[i], &names[maxIdx]);
+        swapi(&heights[i], &heights[maxIdx]);
+        swaps(&names[i], &names[maxIdx]);
     }
 
     *returnSize = namesSize;
