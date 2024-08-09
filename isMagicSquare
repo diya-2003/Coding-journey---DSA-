@@ -1,0 +1,46 @@
+bool isMagicSquare(int grid[3][3]) {
+    int s1 = grid[0][0] + grid[0][1] + grid[0][2];
+    int s2 = grid[1][0] + grid[1][1] + grid[1][2];
+    int s3 = grid[2][0] + grid[2][1] + grid[2][2];
+    int s4 = grid[0][0] + grid[1][0] + grid[2][0];
+    int s5 = grid[0][1] + grid[1][1] + grid[2][1];
+    int s6 = grid[0][2] + grid[1][2] + grid[2][2];
+    int s7 = grid[0][0] + grid[1][1] + grid[2][2];
+    int s8 = grid[2][0] + grid[1][1] + grid[0][2];
+    
+    // Check if all sums are equal
+    return (s1 == s2 && s2 == s3 && s3 == s4 && s4 == s5 && s5 == s6 && s6 == s7 && s7 == s8);
+}
+
+bool contains1to9(int grid[3][3]) {
+    int count[10] = {0}; // counter for digits 1-9
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            int num = grid[i][j];
+            if (num < 1 || num > 9) return false;
+            count[num]++;
+        }
+    }
+    // Check if all numbers from 1 to 9 are used exactly once
+    for (int i = 1; i <= 9; i++) {
+        if (count[i] != 1) return false;
+    }
+    return true;
+}
+
+int numMagicSquaresInside(int** grid, int gridSize, int* gridColSize) {
+    int count = 0;
+    for (int i = 0; i <= gridSize - 3; i++) {
+        for (int j = 0; j <= gridColSize[i] - 3; j++) {
+            int subgrid[3][3] = {
+                {grid[i][j], grid[i][j+1], grid[i][j+2]},
+                {grid[i+1][j], grid[i+1][j+1], grid[i+1][j+2]},
+                {grid[i+2][j], grid[i+2][j+1], grid[i+2][j+2]}
+            };
+            if (contains1to9(subgrid) && isMagicSquare(subgrid)) {
+                count++;
+            }
+        }
+    }
+    return count;
+}
