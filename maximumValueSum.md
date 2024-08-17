@@ -1,5 +1,3 @@
-![Screenshot from 2024-08-18 00-02-31.png](https://assets.leetcode.com/users/images/7c1df5d8-dbc0-4cd5-9a95-0da78bd3b184_1723920230.3214638.png)
-
 # Intuition
 The problem requires finding the maximum sum of three values in a 2D board, where no two values can be in the same row or column. The intuition is to use dynamic programming to efficiently compute the maximum values for different scenarios and consider all possible orientations of the board.
 
