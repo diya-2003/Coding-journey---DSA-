@@ -231,4 +231,27 @@ int** modifiedGraphEdges(int n, int** edges, int edgesSize, int* edgesColSize, i
     }
 
     for (int i = 0; i < edgesSize; ++i) {
-       
+        if (edgeArray[i].weight == -1) {
+            edgeArray[i].weight = 1;
+        }
+        edges[i][2] = edgeArray[i].weight;
+    }
+
+    free(edgeArray);
+    freeAdjList(adjList, n);
+
+    *returnSize = edgesSize;
+    *returnColumnSizes = (int*)malloc(edgesSize * sizeof(int));
+
+    for (int i = 0; i < edgesSize; ++i) {
+        (*returnColumnSizes)[i] = 3;
+    }
+
+    return edges;
+}
+/*	Author   : Pankaj Mondal
+	Date     : Friday, August 30, 2024, 11:29 PM
+	LinkedIn : https://www.linkedin.com/in/buroush
+	GitHub   : https://github.com/Buroush
+	LeetCode : https://leetcode.com/Buroush        		*/
+```
