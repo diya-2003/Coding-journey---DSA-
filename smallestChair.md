@@ -101,11 +101,11 @@ int smallestChair(int** times, int timesSize, int* timesColSize, int targetFrien
     free(availableChairs);
     free(friendToChair);
     return -1;
-/*	Author   : Pankaj Mondal
-	Date     : Thursday, October 11, 2024, 2:48 PM
-	LinkedIn : https://www.linkedin.com/in/buroush
-	GitHub   : https://github.com/Buroush
-	LeetCode : https://leetcode.com/Buroush        		*/    
+/*	Author   : Diya Maity
+	Date     : Thursday, October 11, 2024, 3:04 PM
+	LinkedIn : https://www.linkedin.com/in/diyamity
+	GitHub   : https://github.com/diya-2003
+	LeetCode : https://leetcode.com/u/diyamaity        		*/
 }
 ```
 > Talk to yourself at least once a day. Otherwise you will lose the chance to talk to one of the wisest people in the world. ~ Heroic monk Swami Vivekananda
