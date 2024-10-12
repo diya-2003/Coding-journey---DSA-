@@ -73,6 +73,27 @@ possible
 4. **Check if \( k \) is sufficient**:  
    If the number of police stations \( k \) is greater than or equal to the number of border suburbs, print "possible", otherwise print "impossible".
 
+
+### Test Cases:
+
+**Input:**
+```
+5
+1 3
+1 4
+4 4
+25 11
+25 12
+```
+
+**Output:**
+```
+impossible
+possible
+possible
+impossible
+possible
+```
 ---
 
 ### Code Implementation:
@@ -128,26 +149,5 @@ int main() {
 	  LinkedIn : https://www.linkedin.com/in/buroush
 	  GitHub   : https://github.com/Buroush
 	  LeetCode : https://leetcode.com/Buroush        		*/
-```
-
-### Test Cases:
-
-**Input:**
-```
-5
-1 3
-1 4
-4 4
-25 11
-25 12
-```
-
-**Output:**
-```
-impossible
-possible
-possible
-impossible
-possible
 ```
 > "A life without suffering is like a boat without a sailor; it has no discretion of its own, moving only in a light breeze." - Ishwar Chandra Vidyasagar
