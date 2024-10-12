@@ -150,3 +150,4 @@ possible
 impossible
 possible
 ```
+> "A life without suffering is like a boat without a sailor; it has no discretion of its own, moving only in a light breeze." - Ishwar Chandra Vidyasagar
