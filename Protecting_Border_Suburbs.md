@@ -1,4 +1,4 @@
-### Problem Explanation:
+### [Problem Explanation:](https://www.hackerrank.com/challenges/circle-city/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign)
 
 Roy lives in a city that is circular in shape, centered at the origin (0, 0) on a coordinate plane, with a given radius \( r \). The city has suburbs located at lattice points — points where both the x and y coordinates are integers. Suburbs located strictly inside the city are protected by the Police Department Headquarters. However, suburbs located on the border of the city (the circumference) are unprotected.
 
@@ -123,6 +123,11 @@ int main() {
     }
     return 0;
 }
+/*	Author   : Pankaj Mondal
+    Date     : Saturday, October 12, 2024, 7:44 PM
+	  LinkedIn : https://www.linkedin.com/in/buroush
+	  GitHub   : https://github.com/Buroush
+	  LeetCode : https://leetcode.com/Buroush        		*/
 ```
 
 ### Test Cases:
